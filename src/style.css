@@ -1,0 +1,53 @@
+body {
+  background-color: #00FFFF	;
+}
+h1 {
+  font-family: arial;
+  font-size: 100px;
+  color: #8B008B;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%
+}
+#startBtn {
+  color: #0099CC;
+  border: 30px solid #0099CC;
+  border-radius: 6px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  margin-top: 5%;
+  margin-left: 45%;
+  margin-right: 45%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#botonTipoA, #botonTipoB, #botonSi1,#botonSi2, #botonNo1, #botonNo2 {
+  text-decoration:none;
+  font-weight: 600;
+  font-size: 20px;
+  color:#333333;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:40px;
+  padding-right:40px;
+  background-color:#0099CC;
+  border-color: #d8d8d8;
+  border-width: 3px;
+  border-style: solid;
+  border-radius:35px;
+  margin-left: 18%;
+  margin-right: 18%;
+}
+.instrucciones{
+  padding:25px;
+  background-color:#0099CC;
+  line-height:1.4
+  font-family: arial;
+  font-size: 60px;
+  color: #4B0082;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
