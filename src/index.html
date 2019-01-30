@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset = "utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel = "stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+<!-- ienvenida -->
+    <div id = "Bienvenida">
+      <h1>Welcome To C-Pher!</h1>
+      <button id = "startBtn"> Start </button>
     </div>
+
+<!-- Instrucciones y eleccion de cifrado o descifrado -->
+    <div id = "Elegir" style="display:none">
+      <p class = "instrucciones"> Con la ayuda de C-Pher podras cifrar y descifrar mensajes que requieran de total discreción.
+      Elige la opción deseada: </p>
+      <button id = "botonTipoA" >CIFRAR</button>
+      <button id = "botonTipoB" >DESCIFRAR</button>
+    </div>
+
+<!-- El usuario introduce en las cajas de texto su mensaje a cifrar y su offset-->
+    <div id = "Cifrar" style="display: none">
+      <p class = "mensaje1"> Ingresa tu mensaje en mayusculas, sin números ni caracteres especiales: </p>
+      <p> <textarea id = "cajaMensajeCifrar" cols="40" rows="5"></textarea></p>
+      <p class = "mensaje2"> Ingresa el número de saltos con los que se movera tu mensaje para ser cifrado: </p>
+      <p> <textarea id = "cajaOffsetCifrar" cols="4" rows="1"></textarea></p>
+      <button id = "botonSend1" >ENVIAR</button>
+      <p class = "mensaje3"> Este es tu mensaje cifrado!!: </p>
+      <p id = "mensajeCifrado"></p>
+      <p class = "mensaje4"> Quieres volver a intentarlo?: </p>
+      <button id = "botonSi1" > SI </button>
+      <button id = "botonNo1" > NO </button>
+    </div>
+
+<!-- El usuario introduce en las cajas de texto su mensaje a descifrar y su offset-->
+    <div id = "Descifrar" style="display: none">
+       <p class = "mensaje1"> Ingresa tu mensaje en mayusculas, sin números ni caracteres especiales: </p>
+       <p> <textarea id = "cajaMensajeDescifrar" cols="40" rows="5"></textarea></p>
+       <p class = "mensaje2"> Ingresa el número de saltos con los que se movera tu mensaje para ser descifrado: </p>
+       <p> <textarea id = "cajaOffsetDescifrar" cols="4" rows="1"></textarea></p>
+       <button id = "botonSend2" >ENVIAR</button>
+       <p class = "mensaje3"> Este es tu mensaje descifrado!!: </p>
+       <p class = "mensaje4"> Quieres volver a intentarlo?: </p>
+       <button id = "botonSi2" > SI </button>
+       <button id = "botonNo2" > NO </button>
+  </div>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
