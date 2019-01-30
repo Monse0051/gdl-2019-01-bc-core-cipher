@@ -30,3 +30,28 @@ function encode(){
 }
 
 document.getElementById("botonSend1").addEventListener("click", encode);
+
+function decode(){
+  let msg = document.getElementById("cajaMensajeDescifrar").value;
+  let offset = parseInt(document.getElementById("cajaOffsetDescifrar").value);
+  let encodedMsg = window.cipher.decode(offset, msg);
+  document.getElementById("mensajeDescifrado").innerHTML = encodedMsg;
+}
+
+document.getElementById("botonSend2").addEventListener("click", decode);
+
+function goOut(){
+  document.getElementById("Salir").style.display = "block";
+  document.getElementById("Cifrar").style.display = "none";
+  document.getElementById("Descifrar").style.display = "none";
+}
+document.getElementById("botonNo1").addEventListener("click", goOut);
+document.getElementById("botonNo2").addEventListener("click", goOut);
+
+function goStart(){
+  document.getElementById("Elegir").style.display = "block";
+  document.getElementById("Cifrar").style.display = "none";
+  document.getElementById("Descifrar").style.display = "none";
+}
+document.getElementById("botonSi1").addEventListener("click", goStart);
+document.getElementById("botonSi2").addEventListener("click", goStart);
