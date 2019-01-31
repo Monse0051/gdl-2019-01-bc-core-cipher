@@ -1,35 +1,35 @@
 window.cipher = {
 
-   encode(offset, msgOriginal) {
-    let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const alphabetSize = alphabet.length;
+  alphabet : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+
+  encode(offset, msgOriginal) {
+    const alphabetSize = window.cipher.alphabet.length;
     let msgEncode = "";
     for (let i= 0; i<= msgOriginal.length-1; i++) {
       if (msgOriginal[i] == " ") {
-          msgEncode += " ";
-       } else {
-         let pos = (msgOriginal.charCodeAt(i) - "A".charCodeAt(0) + offset) % alphabetSize;
-         msgEncode += alphabet[pos];
-       }
+        msgEncode += " ";
+      } else {
+        let pos = (msgOriginal.charCodeAt(i) - "A".charCodeAt(0) + offset) % alphabetSize;
+        msgEncode += window.cipher.alphabet[pos];
+      }
     }
 
     return msgEncode;
   },
 
-    decode(offset,  msgCodificado) {
-     let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-     const alphabetSize = alphabet.length;
-     let msgDecoded = "";
-     for (let i= 0; i<=  msgCodificado.length-1; i++) {
-       if (msgCodificado[i] == " ") {
-           msgDecoded += " ";
-        } else {
-          let pos = (msgCodificado.charCodeAt(i) + "A".charCodeAt(0) - offset) % alphabetSize;
-          msgDecoded += alphabet[pos];
-         }
-     }
-     return msgDecoded;
-   }
+  decode(offset,  msgCodificado) {
+    const alphabetSize = window.cipher.alphabet.length;
+    let msgDecoded = "";
+    for (let i= 0; i<=  msgCodificado.length-1; i++) {
+      if (msgCodificado[i] == " ") {
+        msgDecoded += " ";
+      } else {
+        let pos = (msgCodificado.charCodeAt(i) + "A".charCodeAt(0) - offset) % alphabetSize;
+        msgDecoded += window.cipher.alphabet[pos];
+      }
+    }
+    return msgDecoded;
+  }
 };
 
 
