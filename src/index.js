@@ -33,7 +33,7 @@ document.getElementById("botonSend1").addEventListener("click", encode);
 
 function decode(){
   let msg = document.getElementById("cajaMensajeDescifrar").value;
-  let offset = parseInt(document.getElementById("cajaOffsetDescifrar").value);
+  let offset = parseInt (document.getElementById("cajaOffsetDescifrar").value);
   let encodedMsg = window.cipher.decode(offset, msg);
   document.getElementById("mensajeDescifrado").innerHTML = encodedMsg;
 }
@@ -53,5 +53,18 @@ function goStart(){
   document.getElementById("Cifrar").style.display = "none";
   document.getElementById("Descifrar").style.display = "none";
 }
+
+ function clear(){
+   document.getElementById("cajaMensajeDescifrar").value = "";
+   document.getElementById("cajaOffsetDescifrar").value = "";
+   document.getElementById("mensajeDescifrado").innerHTML = "";
+
+   document.getElementById("cajaMensajeCifrar").value = "";
+   document.getElementById("cajaOffsetCifrar").value = "";
+   document.getElementById("mensajeCifrado").innerHTML = "";
+ }
+
 document.getElementById("botonSi1").addEventListener("click", goStart);
+document.getElementById("botonSi1").addEventListener("click", clear);
 document.getElementById("botonSi2").addEventListener("click", goStart);
+document.getElementById("botonSi2").addEventListener("click", clear);
