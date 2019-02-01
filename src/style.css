@@ -1,17 +1,17 @@
 body {
-  background-color: #00FFFF	;
+  background-color: black;
 }
 h1 {
   font-family: arial;
   font-size: 100px;
-  color: #8B008B;
+  color: #00f015;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 5%
 }
 #startBtn {
-  color: #0099CC;
-  border: 30px solid #0099CC;
+  color: black;
+  border: 30px solid #00f015;;
   border-radius: 6px;
   text-align: center;
   display: inline-block;
@@ -23,7 +23,7 @@ h1 {
   text-transform: uppercase;
 }
 
-#botonTipoA, #botonTipoB, #botonSi1,#botonSi2, #botonNo1, #botonNo2 {
+#botonTipoA, #botonTipoB {
   text-decoration:none;
   font-weight: 600;
   font-size: 20px;
@@ -32,7 +32,7 @@ h1 {
   padding-bottom:15px;
   padding-left:40px;
   padding-right:40px;
-  background-color:#0099CC;
+  background-color:#00f015;
   border-color: #d8d8d8;
   border-width: 3px;
   border-style: solid;
@@ -40,32 +40,147 @@ h1 {
   margin-left: 18%;
   margin-right: 18%;
 }
+
+#botonSi1,#botonSi2, #botonNo1, #botonNo2 {
+  text-decoration:none;
+  font-weight: 600;
+  font-size: 20px;
+  color:#333333;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:40px;
+  padding-right:40px;
+  background-color:#00f015;
+  border-color: #d8d8d8;
+  border-width: 3px;
+  border-style: solid;
+  border-radius:35px;
+  margin-left: 22%;
+  margin-right: 18%;
+}
 .instrucciones{
   padding:25px;
-  background-color:#0099CC;
   line-height:1.4
   font-family: arial;
   font-size: 60px;
-  color: #4B0082;
+  color: #00f015;
   margin-left: 15%;
   margin-right: 15%;
 
 }
-.mensaje1, .mensaje2, .mensaje3 {
-  padding:25px;
-  line-height:1.4
+.mensaje1, .mensaje2 {
+  padding:15px;
   font-family: arial;
   font-size: 25px;
-  color: #4B0082;
+  color: #00f015;
   margin-left: 15%;
   margin-right: 15%;
 }
 
-.mensajeCifrado, .mensajeDescifrado,{
-  padding:25px;
+#mensajeCifrado, #mensajeDescifrado {
+  padding:15px;
   font-family: arial;
   font-size: 25px;
-  color: #4B0082;
-  margin-left: 95%;
-  margin-right: 95%;
+  color: #ff0900;
+  margin-left: 40%;
+  margin-right: 40%;
 }
+
+.mensaje3, .mensaje4 {
+  font-family: arial;
+  font-size: 25px;
+  color: #00f015;
+  margin-left: 38%;
+  margin-right: 35%;
+}
+
+#cajaMensajeDescifrar, #cajaMensajeCifrar {
+  margin-left: 38%;
+  margin-right: 40%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px red;
+}
+
+#cajaOffsetCifrar, #cajaOffsetDescifrar {
+  margin-left: 45%;
+  margin-right: 45%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px red;
+}
+
+#botonSend1, #botonSend2 {
+  font-family: arial;
+  background-color:#ff0900;
+  border-color: #d8d8d8;
+  font-size: 16px;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-top: 25%
+  padding: 15px;
+
+  }
+
+  #Salir{
+    font-family: arial;
+    font-size: 50px;
+    color: #00f015;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%
+  }
+
+  .e-mail {
+ background: #6bff70;  /* Fondo del botón */
+ box-sizing: border-box;
+ width: 65px;  /* Ancho del botón */
+ height: 50px;  /* Alto del botón */
+ border-radius:4px;
+ border:1px solid #7DC4FF;  /* Borde del botón */
+ margin: 5px auto;
+ position: relative;
+ box-shadow: 0 0 #50B0FF;  /* Cambia el color de la sombra, debe ser más oscura que el fondo */
+ -webkit-transition: .2s;
+ -moz-transition: .2s;
+ -o-transition: .2s;
+ transition: .2s;
+ }
+ .e-mail:hover {
+ box-shadow: 0 5px #50B0FF;  /* Cambia el color de la sombra, debe ser más oscura que el fondo */
+ top:-5px;
+ }
+ .e-mail:active {
+ top:0;
+ box-shadow: 0 0 #50B0FF;  /* Cambia el color de la sombra, debe ser más oscura que el fondo */
+ }
+
+ .e-mail .icono { /* Utiliza las mismas acotaciones que en el ejemplo del icono */
+ background: white;
+ box-sizing: border-box;
+ width: 40px;
+ height: 30px;
+ float: left;
+ margin: 9px 0 0 9px;
+ border: 1px solid #777;
+ position: relative;
+ border-radius: 2px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,.095)
+ }
+ .e-mail .icono:before, .e-mail .icono:after {
+ content: "";
+ width: 0;
+ height: 0;
+ position: absolute;
+ top: 0;
+ left: 0;
+ }
+ .e-mail .icono:before {
+ border: 19px solid transparent;
+ border-top: 20px solid #777;
+ }
+ .e-mail .icono:after {
+ border: 18px solid transparent;
+ border-top: 19px solid white;
+ left: 1px;
+ }
