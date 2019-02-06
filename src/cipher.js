@@ -33,6 +33,7 @@ window.cipher = {
         msgDecoded += window.cipher.alphabet[pos];
       } else if (msgCodificado.charCodeAt(i) >= "97" && msgCodificado.charCodeAt(i) <= "122") {
         let pos = (msgCodificado.charCodeAt(i) - "a".charCodeAt(0) - offset) % alphabetSize;
+        pos = (pos + alphabetSize)%alphabetSize;
         msgDecoded += window.cipher.alphabet2[pos];
       } else {
         msgDecoded += msgCodificado[i];
@@ -43,7 +44,7 @@ window.cipher = {
 };
 
 
- playground
+ //playground
  let msgOriginal = "Hola Mundo Cruel!";
  let msgEncoded = window.cipher.encode(3, msgOriginal);
  console.log("mensaje cifrado = " + msgEncoded);
