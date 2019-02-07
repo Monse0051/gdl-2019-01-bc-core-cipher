@@ -1,17 +1,35 @@
 body {
-  background-color: black;
+  background-image: url(kisspng-flag-of-the-united-nations-organization-.jpg);
+  background-size: cover;
 }
+ .cipher {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 25px;
+  background-color: #4169E1;
+  width: 900px;
+  border: 15px solid #708090;
+  padding: 15px;
+  margin-top: 2%;
+  margin-left: 15%;
+  margin-right: 45%;
+  text-align: center;
+}
+
+
+
 h1 {
-  font-family: arial;
+  font-family: "Lato", sans-serif;
   font-size: 100px;
-  color: #00f015;
+  color: 	black;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 5%
 }
 #startBtn {
+  font-family: "Lato", sans-serif;
   color: black;
-  border: 30px solid #00f015;;
+  border: 30px solid #778899;
   border-radius: 6px;
   text-align: center;
   display: inline-block;
@@ -24,15 +42,16 @@ h1 {
 }
 
 #botonTipoA, #botonTipoB {
+  font-family: "Lato", sans-serif;
   text-decoration:none;
   font-weight: 600;
   font-size: 20px;
-  color:#333333;
+  color:black;
   padding-top:15px;
   padding-bottom:15px;
   padding-left:40px;
   padding-right:40px;
-  background-color:#00f015;
+  background-color:#778899;
   border-color: #d8d8d8;
   border-width: 3px;
   border-style: solid;
@@ -42,15 +61,16 @@ h1 {
 }
 
 #botonSi1,#botonSi2, #botonNo1, #botonNo2 {
+  font-family: "Lato", sans-serif;
   text-decoration:none;
   font-weight: 600;
   font-size: 20px;
-  color:#333333;
+  color:black;
   padding-top:15px;
   padding-bottom:15px;
   padding-left:40px;
   padding-right:40px;
-  background-color:#00f015;
+  background-color:#778899;
   border-color: #d8d8d8;
   border-width: 3px;
   border-style: solid;
@@ -60,36 +80,36 @@ h1 {
 }
 .instrucciones{
   padding:25px;
-  line-height:1.4
-  font-family: arial;
+  line-height:1.4;
+  font-family: "Lato", sans-serif;
   font-size: 60px;
-  color: #00f015;
+  color: black;
   margin-left: 15%;
   margin-right: 15%;
+  text-align: center;
 
 }
 .mensaje1, .mensaje2 {
   padding:15px;
-  font-family: arial;
+  font-family: "Lato", sans-serif;
   font-size: 25px;
-  color: #00f015;
+  color: black;
   margin-left: 15%;
   margin-right: 15%;
 }
 
 #mensajeCifrado, #mensajeDescifrado {
-  padding:15px;
-  font-family: arial;
+  font-family: "Lato", sans-serif;
   font-size: 25px;
-  color: #ff0900;
+  color: black;
   margin-left: 40%;
-  margin-right: 40%;
+  margin-right: 35%;
 }
 
 .mensaje3, .mensaje4 {
-  font-family: arial;
+  font-family: "Lato", sans-serif;
   font-size: 25px;
-  color: #00f015;
+  color:black;
   margin-left: 38%;
   margin-right: 35%;
 }
@@ -99,7 +119,7 @@ h1 {
   margin-right: 40%;
   border: 1px solid;
   padding: 10px;
-  box-shadow: 5px 10px 18px red;
+  box-shadow: 5px 10px 18px black;
 }
 
 #cajaOffsetCifrar, #cajaOffsetDescifrar {
@@ -107,12 +127,12 @@ h1 {
   margin-right: 45%;
   border: 1px solid;
   padding: 10px;
-  box-shadow: 5px 10px 18px red;
+  box-shadow: 5px 10px 18px black;
 }
 
 #botonSend1, #botonSend2 {
-  font-family: arial;
-  background-color:#ff0900;
+  font-family: "Lato", sans-serif;
+  background-color:#778899;
   border-color: #d8d8d8;
   font-size: 16px;
   margin-left: 45%;
@@ -123,16 +143,17 @@ h1 {
   }
 
   #Salir{
-    font-family: arial;
+    font-family: "Lato", sans-serif;
     font-size: 50px;
-    color: #00f015;
+    color: black;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 5%
+    margin-top: 5%;
+    text-align: center;
   }
 
   .e-mail {
- background: #6bff70;  /* Fondo del botón */
+ background: #778899;  /* Fondo del botón */
  box-sizing: border-box;
  width: 65px;  /* Ancho del botón */
  height: 50px;  /* Alto del botón */
