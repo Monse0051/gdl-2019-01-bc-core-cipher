@@ -8,9 +8,9 @@
   </head>
   <body>
 <!-- div caja de Cipher -->
-<div class=" cipher">
+<!-- <div class=" cipher">
    C-PHER!
-</div>
+</div> -->
 <!-- ienvenida -->
     <div id = "Bienvenida">
       <h1>Welcome To C-Pher!</h1>
@@ -31,7 +31,8 @@
       <p class = "mensaje1"> Ingresa el mensaje que deseas cifrar: </p>
       <p> <textarea id = "cajaMensajeCifrar" cols="30" rows="5"></textarea></p>
       <p class = "mensaje2"> Ingresa el número de saltos con los que se movera tu mensaje para ser cifrado: </p>
-      <p> <textarea id = "cajaOffsetCifrar" cols="4" rows="1"></textarea></p>
+      <!-- <p> <textarea id = "cajaOffsetCifrar" cols="4" rows="1"></textarea></p> -->
+      <input type="number" id = "cajaOffsetCifrar" >
       <button id = "botonSend1" >ENCODE</button>
       <p class = "mensaje3"> Este es tu mensaje cifrado: </p>
       <p id = "mensajeCifrado"></p>
@@ -50,7 +51,8 @@
        <p class = "mensaje1"> Ingresa el mensaje que deseas descifrar: </p>
        <p> <textarea id = "cajaMensajeDescifrar" cols="30" rows="5"></textarea></p>
        <p class = "mensaje2"> Ingresa el número de saltos con los que se movera tu mensaje para ser descifrado: </p>
-       <p> <textarea id = "cajaOffsetDescifrar" cols="4" rows="1"></textarea></p>
+       <!-- <p> <textarea id = "cajaOffsetDescifrar" cols="4" rows="1"></textarea></p> -->
+       <input type="number" id = "cajaOffsetDescifrar">
        <button id = "botonSend2" >DECODE</button>
        <p class = "mensaje3"> Este es tu mensaje descifrado: </p>
        <p id = "mensajeDescifrado"> </p>
